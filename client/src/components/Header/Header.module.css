@@ -1,0 +1,37 @@
+.headerWrapper {
+  background-color: #ffffff;
+}
+.headerContent {
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: table;
+  height: 56px;
+  margin: auto;
+  max-width: 48rem !important;
+  position: relative;
+  width: 100%;
+}
+.backIcon {
+  cursor: pointer;
+  display: table-cell;
+  height: 32px;
+  padding: 8px;
+  vertical-align: middle;
+}
+.titleWrapper {
+  box-sizing: border-box;
+  display: table-cell;
+  height: 32px;
+  padding-left: 0px;
+  vertical-align: middle;
+  width: 100%;
+}
+.title {
+  text-transform: capitalize !important;
+}
+.navigation {
+  cursor: pointer;
+  display: table-cell;
+  padding: 8px;
+  vertical-align: middle;
+}
