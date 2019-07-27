@@ -1,3 +1,3 @@
-import createRootReducer from './reducers'
+import createRootReducer from './reducers';
 
 export default createRootReducer;
