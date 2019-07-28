@@ -1,4 +1,4 @@
-import DefaultLayout from "./layouts/DefaultLayout";
+import DefaultLayout from "./layouts/DefaultLayout/DefaultLayout";
 
 import Home from "./containers/Home";
 

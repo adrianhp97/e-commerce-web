@@ -1,5 +1,6 @@
 .headerWrapper {
   background-color: #ffffff;
+  z-index: 99999;
 }
 .headerContent {
   background-color: #ffffff;
