@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { connect } from "react-redux";
 
 import styles from './DefaultLayout.module.css';
 
@@ -8,12 +9,12 @@ import { Container } from 'semantic-ui-react';
 
 class DefaultLayout extends Component {
   render () {
-    console.log(styles);
     const { children } = this.props;
+    let title = 'dress mini';
 
     return (
       <Fragment>
-        <Header title={"dress mini"} />
+        <Header title={title} />
         <Container id={styles.bodyContent}>
           {children}
         </Container>
@@ -22,4 +23,12 @@ class DefaultLayout extends Component {
   }
 }
 
-export default DefaultLayout;
+export const mapStateToProps = () => {
+  return {};
+};
+
+export const mapDispatcherToProps = (dispatch) => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatcherToProps)(DefaultLayout);
