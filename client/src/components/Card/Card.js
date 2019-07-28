@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './Card.module.css';
 
@@ -19,4 +20,14 @@ class Card extends Component {
     );
   }
 }
+
+Card.propTypes = {
+  children: PropTypes.element,
+  title: PropTypes.string,
+  link: PropTypes.shape({
+    to: PropTypes.string,
+    text: PropTypes.string,
+  }),
+};
+
 export default Card;

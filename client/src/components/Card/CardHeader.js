@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import styles from './CardHeader.module.css';
 
@@ -14,5 +15,13 @@ const CardHeader = ({ title, link }) => {
     </div>
   );
 }
+
+CardHeader.propTypes = {
+  title: PropTypes.string,
+  link: PropTypes.shape({
+    to: PropTypes.string,
+    text: PropTypes.string,
+  }),
+};
 
 export default CardHeader;
