@@ -7,6 +7,7 @@ import CardContent from './CardContent';
 
 class Card extends Component {
   static Header = CardHeader;
+  static Content = CardContent;
 
   render () {
     const { title = null, link = null , children } = this.props;
